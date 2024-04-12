@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family: Inknut Antiqua;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #1b4965;
+    background-color: #ffeae5;
+}
+.about-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Align items in a row */
+    height: 100vh;
+}
+.mission {
+    max-width: 50vw;
+    padding: 0 4vw;
+    padding-top: 10vw;
+    text-align: justify;
+}
+.mission-image {
+    flex: 1; 
+    display: flex;
+    justify-content: right;
+    padding-top: 10vw;
+    align-items: center;
+
+}
+.mission-image img {
+    max-width: 90%;
+    max-height: 90%; 
+}
+.container {
+    max-width: 1400px;
+    padding-inline: 1rem;
+    margin-inline: auto;
+}
+main {
+    padding-top: 8vw;
+}
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5rem;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+.team-title {
+    text-align: center;
+    margin-bottom: 2rem; 
+    font-size: 24px; 
+    color: #1b4965; 
+}
+.mission-content img {
+    margin-right: 20px; /* Adjust spacing between image and text */
+}
+.team-member {
+    display: grid;
+    aspect-ratio: 1/1.2;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease-in-out;
+    transition-delay: 0.8s;
+}
+.team-member:hover {
+    transform: rotateY(180deg);
+    transition-delay: 0s;
+}
+.team-member:not(:hover) {
+    transform: rotateY(0deg);
+    transition-delay: 0s;
+}
+.team-member-img {
+    overflow: hidden;
+}
+.team-member-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.team-member-bio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
+    background-color: #1b4965;
+    color: #ffeae5;
+    outline: thin solid #ffeae5;
+    outline-offset: -15px;
+    transition: opacity 0.2s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.team-member:hover .team-member-bio {
+    transform: rotateY(-180deg);
+    opacity: 1;
+    visibility: visible;
+}
+.contact-info{
+    text-align: center;
+    margin-top: 20px;
+}
+.contact-info a{
+    text-decoration: none;
+    color: #1b4965;
+}
+.contact-info a:hover{
+    color: blue;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Us Page">
+    <title>About Us</title>
+    <link rel="stylesheet" href="aboutusindex.css">
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril Fatface:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mercusuar Script:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inknut Antiqua:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tenali Ramakrishna:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ropa Sans:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap">
+</head>
+<body>
+    <div class="nbs">NBS</div>
+    <div class="nishulkh-bhojan-seva">Nishulkh Bhojan Seva</div>
+    <div class="home"><a href="index.html">Home</a></div>
+    <div class="restaurant-login" id="restaurantLoginText"><a href="restlogin.html">Restaurant Login</a></div>
+    <div class="volunteer-login" id="volunteerLoginText"><a href="volunteerlogin.html">Volunteer Login</a></div>
+    <div class="donor-login" id="donorLoginText"><a href="DonorLogin.html">Donor Login</a></div>
+    <div class="ngo-login" id="nGOLoginText"><a href="ngologin.html">NGO Login</a></div>
+    <div class="about-us"><a href="aboutus.html">About Us</a></div>
+    <div class="about-us-container">
+         <div class="tv-23-child1"></div>
+      <img
+        class="whatsapp-image-2023-10-21-at-8-icon"
+        alt=""
+        src="images/WhatsAppImage.png"
+      />
+        <div class="mission">
+            <h2 class="team-title">
+                Mission Statement
+            </h2>
+            <div class="mission-content">
+                <p>
+                    Our mission at Nishulkh Bhojan Seva is to eliminate food waste and foster food donation at the grassroots level.
+                    We strive towards connecting NGOs and Food partners to alleviate food insecurity. Here, we enable access to food by redistribution, volunteering and providing connectivity.Join us to combat food waste and work towards UN Sustainable Development Goal 2.
+                </p>
+            </div>
+        </div>
+        <div class="mission-image">
+            <img src="images\missionimg.png" alt="Mission Image">
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <h2 class="team-title">Meet Our Team</h2>
+            <section class="team">
+                <div class="team-member">
+                    <div class="team-member-img">
+                            <img src="images\Jiten.png">
+                    </div>
+                    <div class="team-member-bio">
+                        <strong>JITEN PURSWANI</strong>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-img">
+                        <img src="images\Srimathi.png">
+                    </div>
+                    <div class="team-member-bio">
+                        <strong>SRIMATHI SRINIVASAN</strong>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-img">
+                        <img src="images\Aum.png">
+                    </div>
+                    <div class="team-member-bio">
+                        <strong>AUM BHAMBHANI</strong>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-img">
+                        <img src="images\Maanav.png">
+                    </div>
+                    <div class="team-member-bio">
+                        <strong>MAANAV VALECHA</strong>
+                    </div>
+                    
+                </div>
+            </section>
+            <div class="contact-info">
+                <p>Contact us at: </p>
+                 <p>nishulkhbhojanseva@gmail.com</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

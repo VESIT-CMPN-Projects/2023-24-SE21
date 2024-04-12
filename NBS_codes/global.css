@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+ 
+  --font-inknut-antiqua: "Inknut Antiqua";
+  --font-tenali-ramakrishna: "Tenali Ramakrishna";
+  --font-abril-fatface: "Abril Fatface";
+  --font-mercusuar-script: "Mercusuar Script";
+  --font-ropa-sans: "Ropa Sans";
+  --font-inter: Inter;
+
+  
+  --font-size-7xl: 26px;
+  --font-size-xl: 20px;
+
+  
+  --color-mistyrose: #ffeae5;
+  --color-darkslategray: #1b4965;
+  --color-white: #fff;
+}
